@@ -14,19 +14,19 @@ const Navbar = () => {
                <div className="col">
                   <ul className="nav justify-content-center" style={{gap: '15px'}}>
                      <li className="nav-item">
+                        <a className="nav-link" href="#"><i className="bi bi-house-door"></i>Home</a>
+                     </li>
+                     <li className="nav-item">
+                        <a className="nav-link" href="#"><i className="bi bi-folder"></i>Albums</a>
+                     </li>
+                     <li className="nav-item">
+                        <a className="nav-link" href="#"><i className="bi bi-clock"></i>Timeline</a>
+                     </li>
+                     <li className="nav-item">
                         <a className="nav-link active" aria-current="page" href="#"><i className="bi bi-search"></i>Active</a>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="bi bi-house-door"></i>Link</a>
-                     </li>
-                     <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="bi bi-folder"></i>Link</a>
-                     </li>
-                     <li className="nav-item">
-                        <a className="nav-link disabled" aria-disabled="true"><i className="bi bi-clock"></i>Disabled</a>
-                     </li>
-                     <li className="nav-item">
-                        <a className="nav-link disabled" aria-disabled="true"><i className="bi bi-person"></i>Disabled</a>
+                        <a className="nav-link" href="#"><i className="bi bi-person"></i>Profile</a>
                      </li>
                   </ul>
                </div>
