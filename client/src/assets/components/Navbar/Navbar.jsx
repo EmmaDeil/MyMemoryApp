@@ -1,36 +1,37 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
    return (
       <div>
-         <div className="container-fluid" >
+         <div className="container-fluid">
             <div className="row" style={{ backgroundColor: '#f8f9fa' , justifyContent: 'space-between', alignItems: 'center', padding: '10px 0'}}>
-               <div className="col">
-                  <a className="navbar-brand" href="#">
+               <div className="col-2">
+                  <Link className="navbar-brand" to="/">
                      <img src="/memoryLogo.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
                      Memories
-                  </a>
+                  </Link>
                </div>
-               <div className="col">
-                  <ul className="nav justify-content-center" style={{gap: '15px'}}>
+               <div className="col-8">
+                  <ul className="nav justify-content-center">
                      <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="bi bi-house-door"></i>Home</a>
+                        <Link className="nav-link icon-link icon-link-hover" to="/" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-house-door"></i>Home</Link>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="bi bi-folder"></i>Albums</a>
+                        <Link className="nav-link icon-link icon-link-hover" to="/albums" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-folder"></i>Albums</Link>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="bi bi-clock"></i>Timeline</a>
+                        <Link className="nav-link icon-link icon-link-hover" to="/timeline" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-clock"></i>Timeline</Link>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#"><i className="bi bi-search"></i>Active</a>
+                        <Link className="nav-link icon-link icon-link-hover" aria-current="page" to="/active" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-search"></i>Active</Link>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="bi bi-person"></i>Profile</a>
+                        <Link className="nav-link icon-link icon-link-hover" to="/profile" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-person"></i>Profile</Link>
                      </li>
                   </ul>
                </div>
-               <div className="col" style={{justifyContent: 'flex-end', display: 'flex'}}>
+               <div className="col-2" style={{justifyContent: 'flex-end', display: 'flex'}}>
                   <button className="btn btn-primary"><i className="bi bi-camera"></i>Upload</button>
                </div>
             </div>
