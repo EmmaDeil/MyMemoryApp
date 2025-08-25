@@ -14,12 +14,12 @@ const LandingPage = () => {
          <div className='container'>
             <div className="row">
                <div className="col">
-                  <h5>Recent Memories</h5>
-                  <p>Your latest captured moments</p>
+                  <h5 style={{ fontWeight: 'bold', fontSize: '1.3rem'}}>Recent Memories</h5>
+                  <p style={{ marginTop: '-10px', fontWeight: 'lighter', color: '#666' }}>Your latest captured moments</p>
                </div>
                <div className="col" style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', gap: '15px' }}>
-                  <i className="bi bi-grid-3x3-gap"></i> <span style={{ marginLeft: '10px' }}>Grid View</span>
-                  <i className="bi bi-grid-1x2"></i> <span style={{ marginLeft: '10px' }}>List View</span>
+                  <i className="bi bi-grid-3x3-gap"></i> <span style={{ marginLeft: '-4px' }}></span>
+                  <i className="bi bi-grid-1x2"></i> <span style={{ marginLeft: '-5px' }}></span>
                </div>
             </div>
            <div>
