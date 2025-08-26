@@ -2,7 +2,7 @@ import React from 'react'
 
 const LandingPage = () => {
    return (
-      <div>
+      <div className='' style={{marginBottom: '50px'}}>
          <p style={{ textAlign: 'center', marginTop: '50px', border: '1px solid #ccc', padding: '5px 10px', borderRadius: '50px', width: '20%', margin: '25px auto', color: '#1E90FF', backgroundColor: '#B0C4DE' }}><i className="bi bi-camera"></i> Your Digital Memory Album</p>
          <h1 style={{ textAlign: 'center', marginTop: '-10px', fontSize: '3.5rem', fontWeight: 'bold' }}>Preserve Your</h1>
          <h1 style={{ textAlign: 'center', marginTop: '-5px', fontSize: '4rem', fontWeight: 'bold', background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Beautiful Memories</h1>
@@ -90,7 +90,8 @@ const LandingPage = () => {
             </div>
          </div>
          <div className='' style={{ textAlign: 'center', marginTop: '30px', justifyContent: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img src="/camera.svg" alt="" style={{borderRadius: '50px', width: '100px', height: '100px', border: '1px solid #ccc', padding: '20px', background: 'inear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)'}}/>
+            <img src="/camera.svg" alt="" style={{borderRadius: '50px', width: '100px', height: '100px', border: '1px solid #ccc', padding: '20px', background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)', WebkitBackgroundClip: 'text', color: 'transparent'}}/>
+            <p style={{margin: '10px 0', fontSize: '1.5rem', fontWeight: 'bold'}}>Start Your Journey</p>
             <p style={{ padding: '10px', width: '20%', textAlign: 'center', justifyItems: 'center' }}>Upload your first photo or video to begin creating your digital memory album</p>
 
             <button className='btn btn-primary' style={{borderRadius: '10px', padding: '5px 10px 5px 10px', height: '40px', width: '180px', textAlign: 'center'}}><i className="bi bi-plus-lg"></i> Add New Memory</button>

@@ -32,7 +32,7 @@ const Navbar = () => {
                   </ul>
                </div>
                <div className="col-2" style={{justifyContent: 'flex-end', display: 'flex'}}>
-                  <button className="btn btn-primary"><i className="bi bi-camera"></i>Upload</button>
+                  <button className="btn btn-primary" style={{borderRadius: '10px', padding: '5px 20px'}}><i className="bi bi-camera" style={{paddingRight: '5px'}}></i> Upload</button>
                </div>
             </div>
          </div>
