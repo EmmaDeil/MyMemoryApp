@@ -94,7 +94,7 @@ const LandingPage = () => {
             <p style={{margin: '10px 0', fontSize: '1.5rem', fontWeight: 'bold'}}>Start Your Journey</p>
             <p style={{ padding: '10px', width: '20%', textAlign: 'center', justifyItems: 'center' }}>Upload your first photo or video to begin creating your digital memory album</p>
 
-            <button className='btn btn-primary' style={{borderRadius: '10px', padding: '5px 10px 5px 10px', height: '40px', width: '180px', textAlign: 'center'}}><i className="bi bi-plus-lg"></i> Add New Memory</button>
+            <button className='btn btn-primary' style={{borderRadius: '10px', padding: '5px 10px 5px 10px', height: '40px', width: '200px', textAlign: 'center'}}><i className="bi bi-plus-lg" style={{marginRight: '10px'}}></i> Add New Memory</button>
          </div>
       </div>
 
