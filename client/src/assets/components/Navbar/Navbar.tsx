@@ -15,19 +15,19 @@ const Navbar = () => {
                <div className="col-8">
                   <ul className="nav justify-content-center">
                      <li className="nav-item">
-                        <Link className="nav-link icon-link icon-link-hover" to="/" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-house-door"></i>Home</Link>
+                        <Link className="nav-link icon-link icon-link-hover" to="/" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' } as React.CSSProperties}><i className="bi bi-house-door"></i>Home</Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link icon-link icon-link-hover" to="/albums" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-folder"></i>Albums</Link>
+                        <Link className="nav-link icon-link icon-link-hover" to="/albums" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' } as React.CSSProperties}><i className="bi bi-folder"></i>Albums</Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link icon-link icon-link-hover" to="/timeline" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-clock"></i>Timeline</Link>
+                        <Link className="nav-link icon-link icon-link-hover" to="/timeline" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' } as React.CSSProperties}><i className="bi bi-clock"></i>Timeline</Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link icon-link icon-link-hover" aria-current="page" to="/active" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-search"></i>Active</Link>
+                        <Link className="nav-link icon-link icon-link-hover" aria-current="page" to="/active" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' } as React.CSSProperties}><i className="bi bi-search"></i>Active</Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link icon-link icon-link-hover" to="/profile" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' }}><i className="bi bi-person"></i>Profile</Link>
+                        <Link className="nav-link icon-link icon-link-hover" to="/profile" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' } as React.CSSProperties}><i className="bi bi-person"></i>Profile</Link>
                      </li>
                   </ul>
                </div>

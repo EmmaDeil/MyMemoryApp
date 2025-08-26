@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LandingPage = () => {
+const HomePage = () => {
    return (
       <div className='' style={{marginBottom: '50px'}}>
          <p style={{ textAlign: 'center', marginTop: '50px', border: '1px solid #ccc', padding: '5px 10px', borderRadius: '50px', width: '20%', margin: '25px auto', color: '#1E90FF', backgroundColor: '#B0C4DE' }}><i className="bi bi-camera"></i> Your Digital Memory Album</p>
@@ -103,4 +103,4 @@ const LandingPage = () => {
    )
 }
 
-export default LandingPage;
+export default HomePage;

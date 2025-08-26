@@ -4,8 +4,9 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
 import Navbar from './assets/components/Navbar/Navbar'
+import HomePage from './pages/HomePage'
 // import Footer from './assets/components/Footer/Footer' 
-import LandingPage from './LandingPage' 
+
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <div className="App">
         <ToastContainer />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
         {/* <Footer /> */}
       </div>
