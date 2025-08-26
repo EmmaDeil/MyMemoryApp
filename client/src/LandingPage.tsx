@@ -92,6 +92,7 @@ const LandingPage = () => {
          <div className='image-container' style={{ textAlign: 'center', marginTop: '30px' }}>
             <p style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '10px', width: '20%', textAlign: 'center', cursor: 'pointer' }}><i className="bi bi-plus-lg"></i> Add New Memory</p>
          </div>
+         <button className='btn btn-primary' style={{borderRadius: '10px', padding: '5px 10px 5px 10px', height: '40px', width: '180px', textAlign: 'center'}}><i className="bi bi-plus-lg"></i> Add New Memory</button>
       </div>
 
 
