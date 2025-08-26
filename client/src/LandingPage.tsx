@@ -12,7 +12,7 @@ const LandingPage = () => {
             <button className='btn btn-outline-secondary' style={{ margin: '0 auto', marginTop: '10px', padding: '10px 20px', fontSize: '1.2rem', borderRadius: '15px', backgroundColor: 'white', color: '#295F98', cursor: 'pointer' }}><i className="bi bi-info-circle"></i> View Timeline</button>
          </div>
          <div className='container'>
-            <div className="row">
+            <div className="row" style={{marginTop: '50px'}}>
                <div className="col">
                   <h5 style={{ fontWeight: 'bold', fontSize: '1.3rem' }}>Recent Memories</h5>
                   <p style={{ marginTop: '-10px', fontWeight: 'lighter', color: '#666' }}>Your latest captured moments</p>
@@ -32,7 +32,7 @@ const LandingPage = () => {
                   </div>
                </div>
 
-               <div className="container">
+               <div className="container-fluid">
                   <div className="row">
                      <div className="col-6 col-md-3">
                         <div className='card' style={{borderRadius: '10px'}}>
@@ -41,46 +41,45 @@ const LandingPage = () => {
                            <h6 className='card-title' style={{margin: '5px 0', fontSize: '1.2rem'}}>Morning Coffee Moments</h6>
                            <div style={{justifyContent: 'space-between', display: 'flex', marginTop: '20px'}}>
                               <p style={{}}><i className="bi bi-calendar"></i> Nov 15, 2024</p>
-                              <p style={{marginLeft: '-30px'}}><i className="bi bi-geo-alt"></i> Home</p>
+                              <p style={{marginLeft: '-30px', fontSize: '0.8rem'}}><i className="bi bi-geo-alt"></i> Home</p>
                               <p><i className="bi bi-heart"></i> </p>
                            </div>
                         </div>
                      </div>
                      </div>
                      <div className="col-6 col-md-3">
-                        <div className='card'>
+                        <div className='card' style={{width: '310px', borderRadius: '10px'}}>
                            <img src="sunset.png" alt="Memory 2" style={{ width: '100%', height: '250px', borderRadius: '10px 10px 0 0' }} className='card-img-top' />
                            <div className='card-body'>
                               <h6 className='card-title' style={{margin: '5px 0', fontSize: '1.2rem'}}>Sunset Beach Work</h6>
                               <div style={{justifyContent: 'space-between', display: 'flex', marginTop: '20px'}}>
                               <p style={{}}><i className="bi bi-calendar"></i> Nov 10, 2024</p>
-                              <p style={{marginLeft: '-30px'}}><i className="bi bi-geo-alt"></i> Home</p>
+                              <p style={{marginLeft: '5px', fontSize: '0.8rem'}}><i className="bi bi-geo-alt"></i> Malibu Beach</p>
                               <p><i className="bi bi-heart"></i> </p>
                            </div>
                            </div>
                         </div>
                      </div>
                      <div className="col-6 col-md-3">
-                        <div className='card'>
-                           <img src="loveletters.png" alt="Memory 3" style={{ width: '100%', height: '250px' }} className='card-img-top' />
+                        <div className='card' style={{borderRadius: '10px'}}>
+                           <img src="loveletters.png" alt="Memory 3" style={{ width: '100%', height: '250px', borderRadius: '10px 10px 0 0' }} className='card-img-top' />
                            <div className='card-body'>
-                              <h6 className='card-title' style={{margin: '5px 0'}}>City Lights</h6>
+                              <h6 className='card-title' style={{margin: '5px 0', fontSize: '1.2rem'}}>Love Letters Collections</h6>
                               <div style={{justifyContent: 'space-between', display: 'flex', marginTop: '20px'}}>
                               <p><i className="bi bi-calendar"></i> Nov 8, 2024</p>
-                              <p style={{marginLeft: '-30px'}}><i className="bi bi-geo-alt"></i> Home</p>
                               <p><i className="bi bi-heart"></i> </p>
                            </div>
                            </div>
                      </div>
                      </div>
                      <div className="col-6 col-md-3">
-                        <div className='card'>
-                           <img src="Quiettime.png" alt="Memory 4" style={{ width: '100%', height: '250px' }}  className='card-img-top'/>
+                        <div className='card' style={{width: '350px', borderRadius: '10px'}}>
+                           <img src="Quiettime.png" alt="Memory 4" style={{ width: '100%', height: '250px', borderRadius: '10px 10px 0 0' }}  className='card-img-top'/>
                         <div className='card-body'>
-                           <h6 className='card-title' style={{margin: '5px 0'}}>Friends Gathering</h6>
+                           <h6 className='card-title' style={{margin: '5px 0', fontSize: '1.2rem'}}>Quiet Reading Time</h6>
                            <div style={{justifyContent: 'space-between', display: 'flex', marginTop: '20px'}}>
                               <p><i className="bi bi-calendar"></i> Nov 5, 2024</p>
-                              <p style={{marginLeft: '-30px'}}><i className="bi bi-geo-alt"></i> Home</p>
+                              <p style={{marginLeft: '-30px', fontSize: '0.8rem'}}><i className="bi bi-geo-alt"></i> Library Corner</p>
                               <p><i className="bi bi-heart"></i> </p>
                            </div>
                         </div>
