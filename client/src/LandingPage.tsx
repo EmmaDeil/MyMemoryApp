@@ -89,10 +89,12 @@ const LandingPage = () => {
                </div>
             </div>
          </div>
-         <div className='image-container' style={{ textAlign: 'center', marginTop: '30px' }}>
-            <p style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '10px', width: '20%', textAlign: 'center', cursor: 'pointer' }}><i className="bi bi-plus-lg"></i> Add New Memory</p>
+         <div className='' style={{ textAlign: 'center', marginTop: '30px', justifyContent: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <img src="/camera.svg" alt="" style={{borderRadius: '50px', width: '100px', height: '100px', border: '1px solid #ccc', padding: '20px', background: 'inear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)'}}/>
+            <p style={{ padding: '10px', width: '20%', textAlign: 'center', justifyItems: 'center' }}>Upload your first photo or video to begin creating your digital memory album</p>
+
+            <button className='btn btn-primary' style={{borderRadius: '10px', padding: '5px 10px 5px 10px', height: '40px', width: '180px', textAlign: 'center'}}><i className="bi bi-plus-lg"></i> Add New Memory</button>
          </div>
-         <button className='btn btn-primary' style={{borderRadius: '10px', padding: '5px 10px 5px 10px', height: '40px', width: '180px', textAlign: 'center'}}><i className="bi bi-plus-lg"></i> Add New Memory</button>
       </div>
 
 
