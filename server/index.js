@@ -18,8 +18,15 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 app.use(helmet());   
-app.use('/posts', PostRoutes);
-app.use('/users', UserRoutes);
+
+// Add /api prefix to match frontend expectations
+app.use('/api/posts', PostRoutes);
+app.use('/api/users', UserRoutes);
+
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ message: 'Server is running', timestamp: new Date().toISOString() });
+});
 
 app.listen(PORT, () => {  
    console.log(`server is running at http://localhost:${PORT}`);
