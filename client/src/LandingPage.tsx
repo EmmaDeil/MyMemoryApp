@@ -36,7 +36,7 @@ const LandingPage = () => {
                   <div className="row">
                      <div className="col-6 col-md-3">
                         <div className='card' style={{borderRadius: '10px'}}>
-                        <img src="coffee.png" alt="Memory 1" style={{ width: '100%', height: '250px', borderRadius: '10px 10px 0 0' }} className='card-img-top' />
+                        <img src="C:\Users\eclef\Desktop\Memories\client\public\coffee.png" alt="Memory 1" style={{ width: '100%', height: '250px', borderRadius: '10px 10px 0 0' }} className='card-img-top' />
                         <div className='card-body'>
                            <h6 className='card-title' style={{margin: '5px 0', fontSize: '1.2rem'}}>Morning Coffee Moments</h6>
                            <div style={{justifyContent: 'space-between', display: 'flex', marginTop: '20px'}}>

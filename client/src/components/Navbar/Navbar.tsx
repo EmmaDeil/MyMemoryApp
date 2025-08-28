@@ -15,7 +15,7 @@ const Navbar = () => {
                <div className="col-8">
                   <ul className="nav justify-content-center">
                      <li className="nav-item">
-                        <Link className="nav-link icon-link icon-link-hover" to="/" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' } as React.CSSProperties}><i className="bi bi-house-door"></i>Home</Link>
+                        <Link className="nav-link icon-link icon-link-hover" to="/landingpage" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' } as React.CSSProperties}><i className="bi bi-house-door"></i>Home</Link>
                      </li>
                      <li className="nav-item">
                         <Link className="nav-link icon-link icon-link-hover" to="/albums" style={{ '--bs-icon-link-transform': 'translate3d(0, -.125rem, 0)' } as React.CSSProperties}><i className="bi bi-folder"></i>Albums</Link>
