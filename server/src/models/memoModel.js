@@ -21,7 +21,7 @@ const postSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  message: {
+  desc: {
     type: String,
     required: true,
   },

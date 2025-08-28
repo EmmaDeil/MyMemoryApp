@@ -1,11 +1,28 @@
 import API from './index.js';
+import axios from 'axios';
 
 // Auth API endpoints
+interface AuthPayload {
+  email: string;
+  password: string;
+  name?: string;
+}
+
+export const login = async (data: AuthPayload) => {
+  const response = await API.post('/auth/login', data);
+  return response.data;
+  };
+
+  export const register = async (userData: AuthPayload) => {
+    const response = await API.post('/auth/register', userData);
+    return response.data;
+  };
+
 export const authAPI = {
   // User registration
-  register: async (userData) => {
+  register: async (userData: AuthPayload) => {
     try {
-      const response = await API.post('/users/register', userData);
+      const response = await API.post('/auth/register', userData);
       return response.data;
     } catch (error) {
       throw error.response?.data?.message || 'Registration failed';

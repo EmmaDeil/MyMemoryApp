@@ -1,6 +1,6 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { PayLoadAction } from '@reduxjs/toolkit';
-import { axiosInstance } from '../../axiosInstance';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { PayloadAction } from '@reduxjs/toolkit';
+import { axiosxInstance } from '../../axiosInstance';
 
 interface User {
    _id: string;
@@ -21,6 +21,7 @@ const initialState: AuthState = {
   loading: false,
   error: null,
 }
+
 
 export const registerUser = createAsyncThunk(
    'auth/registerUser',
@@ -97,5 +98,5 @@ const authSlice = createSlice({
    }
 })
 
-
+export const { logout, setCredentials } = authSlice.actions;
 export default authSlice.reducer;
