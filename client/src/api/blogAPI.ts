@@ -4,7 +4,6 @@ interface BlogPayLoad {
    title: string;
    desc: string;
    tags: string[];
-   likeCount: number;
    image: string[];
    video: string[];
    location: string;
@@ -30,28 +29,34 @@ const getBlogsById = async (blogId: string) => {
    return response.data;
 };
 
-const createBlogPost = async (data: BlogPayLoad) => {
-   const response = await axiosInstance.post('/blog', data);
+const createBlogs = async (data: BlogPayLoad) => {
+   const response = await axiosInstance.post('blog/create', data);
    return response.data;
 };
 
-const updateBlogPost = async (userId: string, data: BlogPayLoad) => {
-   const response = await axiosInstance.put(`/blog/${userId}`, data);
+const updateBlogs = async (userId: string, data: Partial<BlogPayLoad>) => {
+   const response = await axiosInstance.put(`/blog/update/${userId}`, data);
    return response.data;
 };
 
-const deleteBlogPost = async (id: string) => {
-   const response = await axiosInstance.delete(`/blog/${id}`);
+const deleteBlog = async (id: string) => {
+   const response = await axiosInstance.delete(`/blog/delete/${id}`);
+   return response.data;
+};
+
+const likeBlog = async (id: string) => {
+   const response = await axiosInstance.post(`/blog/like/${id}`);
    return response.data;
 };
 
 
 export {
-   createBlogPost,
+   createBlogs,
    getBlogByUser,
    getUserBlogById,
    getAllBlogs,
    getBlogsById,
-   updateBlogPost,
-   deleteBlogPost
+   updateBlogs,
+   deleteBlog,
+   likeBlog
 };
