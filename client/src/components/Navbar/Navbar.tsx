@@ -89,7 +89,7 @@ const Navbar = () => {
                            <span className='menu-item'>Hi, {user?.name}</span>
                            <span className='menu-item' onClick={handleLogout} style={{ cursor: 'pointer' }}>Logout</span>
                         </>
-                     )}
+                     )};
                   </div>
                </div>
             </div>
